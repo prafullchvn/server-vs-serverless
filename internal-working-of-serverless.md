@@ -2,6 +2,18 @@
 
 Instead of allowing the developers to manange the architecture of serverless, cloud provider take up these responsibilities. This allows developer to focus on development.One of the popular example of serverless service is FaaS (Function as a Service). Here developer writes the code deploys it.
 
+## Fundamental concepts in serverless architecture
+
+1. Invocation : A single function execution
+
+2. Duration : Time for which the function executes
+
+3. Cold start: Period of latency when function is freshly started.
+
+4. Concurrency limit: Number of concurrent thread that are launched.
+
+5. Timeout: Time threshold for which function is allowed to execute before being terminated.
+
 ## What happens when serverless function is executed internally?
 
 Whenever developer packages & host the application as FaaS, it is packaged & stored in memory. It can be any memory service which depends on cloud vencor you are opting for. In case of AWS it is S3 bucket & in case of azure it is storage account.
@@ -10,28 +22,30 @@ When deploying the developer sets the trigger.
 
 There are following types of triggers.
 
-1. HTTP Trigger
-2. Queue Trigger
-3. Event Hub Trigger
-4. Blog trigger
+1. HTTP Trigger (Accessing through web)
+2. Queue Trigger (As notification in queue service of event pushed in )
+3. Event Hub Trigger (When event is emitted by other service)
+4. Blob trigger (When some file is uploaded)
 
-Triggers available might vary based on cloud providers. It can be either of above. Mostly id depends on use case. You can have function executing which you want to act as controller for HTTP requests. It can be async task such as sending email on registration of new user.
+Triggers available might vary based on cloud providers. It can be either of above. Mostly it depends on use case. You can have function executing which you want to act as controller for HTTP requests. It can be async task such as sending email on registration of new user.
 
-Whenever request comes packaged application code is launched inside of container as process. Whenever request comes it is forwarded to this process. This conatiner is kept alive for while to server multiple requests if there are any.
+Whenever request comes, packaged application code is launched inside of container as process. Whenever request comes it is forwarded to this process. This conatiner is kept alive for while to serve multiple requests if there are any. Also the resources required by the funciton are cached so that they don't need to be initialised again.
 
-As traffic to function increases the internally the more instances of container are launched. Traffic is then internally load balanced among these containers.
+As traffic to function increases the internally the more instances of container are launched. Traffic is then internally load balanced among these containers. Cloud vendors provide various options for scalability where we can set threshold on various parameters.
+
+Depending on various parameters many simultaneous processes are launched to handle traffic to serverless functions which is known as concurrency as mensioned above.
 
 ![internals of serverless function](./resources/images/internal-of-serverless-function.png)
 
 ## Synchronus & Asychronus working of function
 
-Serverless function can be set to execute synchronusly or asynchronusly. In case of http trigger function need to be executed synchronously. HTTP request gets completed when function sends the appropriate response back to user.
+Serverless function can be set to execute synchronously or asynchronously. In case of HTTP trigger function need to be executed synchronously. HTTP request gets completed when function sends the appropriate response back to user.
 
 But in case of queue or event trigger it can executed in asynchornously. An example can be confirmation email sent to user after signup. Whenever user signups and you want to send the confirmation email to that user. You can have function set up which will look out for new user signup event. Whenever new user signs a serverless function is triggered which send the email.
 
 ## Where is azure function actually hosted?
 
-Broad level answer is some data center of cloud vendor. While creating the serverless function you can set the region where your function will be hosted. All the files requried for the function to get hosted are stored in one of the storage service provided by the same cloud vendor.
+Broad level answer is some data center of cloud vendor. While creating the serverless function you can set the region where your function will be hosted. All the files requiried for the function to get hosted are stored in one of the storage service provided by the same cloud vendor.
 
 ## Architecture differences between server & serverless.
 
