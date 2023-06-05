@@ -25,3 +25,7 @@ However, serverless computing is not a magic bullet for all web application deve
 - Serverless architectures are inherently scalable
 - Quick deployments and updates are possible
 - Code can run closer to the end user, decreasing latency
+
+# Links referred
+
+- https://www.cloudflare.com/en-gb/learning/serverless/why-use-serverless/
