@@ -1,4 +1,4 @@
-# When to use server-less over server
+# When to use serverless.
 
   - Building applications with serverless functions requires a different approach than traditional server hosting, and the decision to use serverless depends on the problem it solves and the time investment required.
 
@@ -24,7 +24,6 @@ s
 
 #### Tip : 
   Utilizing [MidyJS](https://middy.js.org), a middleware npm package that helps abstract configuration and promotes code reuse between functions.
-
 
 
 # References
