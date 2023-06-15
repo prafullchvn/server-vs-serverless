@@ -43,6 +43,12 @@ Serverless function can be set to execute synchronously or asynchronously. In ca
 
 But in case of queue or event trigger it can executed in asynchornously. An example can be confirmation email sent to user after signup. Whenever user signups and you want to send the confirmation email to that user. You can have function set up which will look out for new user signup event. Whenever new user signs a serverless function is triggered which send the email.
 
+## Example of serverless in microservice architecture
+
+![Microservice using serverless](./resources/images/microservice-using-serverless.png)
+
+For each of the service there is separate serverless function. In above image, architecture of typical web application is given. For authentication, storage function and database service can be different serverless function. Each one them is executed based on request coming from API gateway.
+
 ## Where is azure function actually hosted?
 
 Broad level answer is some data center of cloud vendor. While creating the serverless function you can set the region where your function will be hosted. All the files requiried for the function to get hosted are stored in one of the storage service provided by the same cloud vendor.
