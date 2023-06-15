@@ -2,10 +2,14 @@
 
 ## 2. [About Server and Serverless](./About-Server-and-Serverless.md)
 
-## 4. [Server architecture and internal working](/server-architecture.md)
+## 3. [Internal working & arch of server](/LINK-HERE)
 
-## 5. [Advantages of serverless](/pros-of-serverless-over-server.md)
+## 4. [Internal working & arch of serverless](/Internal-working-of-serverless.md)
 
-## 6. [Limitations of Serverless](/limitations.md)
+## 5. [Advantages of serverless & server](/Advantage-of-server-and-serverless.md)
 
-## 7. [When to use serverless or server](/when-to-use-server-or-serverless.md)
+## 6. [Disadvantage of serverless & server](/Disadvantage-of-server-and-serverless.md)
+
+## 7. [When to choose serverless or server](/LINK-HERE)
+
+## 8. [Conclusion ](/LINK-HERE)

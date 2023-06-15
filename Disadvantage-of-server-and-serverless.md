@@ -1,4 +1,4 @@
-# Limitations of Serverless
+# Disadvantage of Serverless
 
 ## Response latency
 
