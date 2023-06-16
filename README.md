@@ -10,6 +10,6 @@
 
 ## 6. [Non technical consideration about server & serverless](/Disadvantage-of-server-and-serverless.md)
 
-## 7. [Serverless & edge computing](/LINK-HERE)
+## 7. [Serverless edge computing](/serverless-edge-computing.md)
 
 ## 8. [Conclusion](/LINK-HERE)
