@@ -28,6 +28,16 @@
 
 severless & edge computing - sai
 
+debugging - swapnil
+
+development efforts/patterns - sourav
+
+- order of deployment (microservice)
+- understanding context
+- testing
+- abstraction of code
+- middleware
+
 ## Open questions or doubts
 
 Physical server or just cloud to consider ???
