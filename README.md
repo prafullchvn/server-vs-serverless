@@ -2,7 +2,7 @@
 
 ## 2. [About Server and Serverless](./About-Server-and-Serverless.md)
 
-## 3. [Internal working server](/LINK-HERE)
+## 3. [Internal working server](/LINK-HERE) rephrase
 
 ## 4. [Internal working serverless](/Internal-working-of-serverless.md)
 

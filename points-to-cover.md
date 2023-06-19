@@ -28,6 +28,17 @@
 
 severless & edge computing - sai
 
+debugging
+
+development cost/patterns
+
+- order of deployment
+- understanding context
+- testing
+- abstraction of code
+- middleware
+
+
 ## Open questions or doubts
 
 Physical server or just cloud to consider ???
