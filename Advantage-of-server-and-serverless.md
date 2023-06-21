@@ -1,4 +1,12 @@
-# Advantages of serverless over server based systems
+# Advantages of server
+
+- Can be customized as per business requirements.
+- Dedicated machines. so code is isolated.
+- A server can save you more money in the long term if server is running 24/7.
+- A server allows active collaboration between individual devices by sharing access rights.
+
+
+# Advantages of serverless
 
 ## Why to use serverless computing ?
 
@@ -16,7 +24,6 @@ With serverless architectures, developers do not need to worry about
 
 However, serverless computing is not a magic bullet for all web application developers.
 
-<br>
 
 ## Advantages of serverless computing:
 
@@ -25,6 +32,12 @@ However, serverless computing is not a magic bullet for all web application deve
 - Serverless architectures are inherently scalable
 - Quick deployments and updates are possible
 - Code can run closer to the end user, decreasing latency
+
+<br>
+
+
+
+
 
 # Links referred
 
