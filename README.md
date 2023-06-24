@@ -2,9 +2,9 @@
 
 ## 2. [About Server and Serverless](./About-Server-and-Serverless.md)
 
-## 3. [Internal working server](/LINK-HERE) rephrase
+## 3. [Mechanism of server](/LINK-HERE) rephrase
 
-## 4. [Internal working serverless](/Internal-working-of-serverless.md)
+## 4. [Mechanism of serverless](/Internal-working-of-serverless.md)
 
 ## 5. [Technical consideration about server & serverless](/Advantage-of-server-and-serverless.md)
 
