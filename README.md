@@ -6,7 +6,7 @@
 
 ## 4. [Mechanism of serverless](/Internal-working-of-serverless.md)
 
-## 5. [Technical consideration about server & serverless](/Advantage-of-server-and-serverless.md)
+## 5. [Technical consideration about server & serverless](/Technical-Considerations.md)
 
 ## 6. [Non technical consideration about server & serverless](/Disadvantage-of-server-and-serverless.md)
 
